@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crear Cuenta</title>
+</head>
+<body>
+    <h1>Perfil del Usuario</h1>
+    {% if user %}
+        <p>Nombre: {{ user.nombre }}</p>
+        <p>Apellido: {{ user.apellido }}</p>
+        <p>Nombre de Usuario: {{ user.username }}</p>
+        <p>Rol: {{ user.rol }}</p>
+    {% else %}
+        <p>No se encontró información del usuario.</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crear Cuenta</title>
+</head>
+<body>
+    <h1>Crear Cuenta</h1>
+    <form action="/register" method="post">
+        <!-- Campos del formulario -->
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="apellido" placeholder="Apellido" required>
+        <input type="text" name="username" placeholder="Nombre de Usuario" required>
+        <select name="rol">
+            <option value="estudiante">Estudiante</option>
+            <option value="educador">Educador</option>
+        </select>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Crear Cuenta</button>
+    </form>
+</body>
+</html>
